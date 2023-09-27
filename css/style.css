@@ -44,9 +44,12 @@ body{
     background-color: rgb(184, 184, 184);
 }
 .main{
+    display: flex;
+    justify-content: center;
     margin-left: 15%;
     padding: 20px;
     text-align: center;
+    flex-direction: column;
 }
 .main h1{
     padding: 10px;
