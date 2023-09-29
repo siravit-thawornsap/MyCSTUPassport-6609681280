@@ -92,12 +92,18 @@ body {
     flex-direction: column;
     text-align:justify;
 }
+.text-box>h2{
+    background-color:  rgb(119, 119, 119);
+    padding: 10px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
 .button1 {
     margin-top: 10px;
     background-color: #327df6;
     border: none;
     border-radius: 10%;
-    color: white;
+    color: rgb(229, 229, 229);
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
