@@ -73,24 +73,25 @@ body {
     flex-direction: row;
     justify-content: center;
     margin-top: 20px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     padding: 20px;
     border-style: groove;
     display: flex;
+    flex-grow: 1;
 }
 
 .content-box>div {
     margin: 20px;
-    font-size: medium;
 }
 
-/* .text-box{
+.text-box{
+    flex-wrap: nowrap;
     padding: 10px;
-    border-style: groove;
+    /* border-style: groove; */
     display: flex;
     flex-direction: column;
-    text-align:left;
-} */
+    text-align:justify;
+}
 .button1 {
     margin-top: 10px;
     background-color: #327df6;
