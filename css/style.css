@@ -1,49 +1,56 @@
-*{
-    margin : 0 ;
-    padding : 0 ;
+* {
+    margin: 0;
+    padding: 0;
     text-decoration: none;
 }
-body{
+
+body {
     box-sizing: border-box;
     font-family: sans-serif;
 }
 
-.sidebar{
-    height: 100%; 
-    width: 15%; 
-    position: fixed; 
-    z-index: 1; 
-    top: 0; 
+.sidebar {
+    height: 100%;
+    width: 15%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
     left: 0;
-    background-color: #373737; 
+    background-color: #373737;
 }
-.sidebar-img{
+
+.sidebar-img {
     max-width: auto;
     max-height: 500px;
     text-align: center;
     background: rgb(155, 155, 155);
 }
-.sidebar-img img{
+
+.sidebar-img img {
     max-width: 150px;
     max-height: 150px;
 }
+
 .sidebar a {
     padding: 10px;
     text-decoration: none;
     font-size: 25px;
     color: #fbfbfb;
     display: block;
-  }
-.sidebar h2{
+}
+
+.sidebar h2 {
     text-align: center;
     font-size: 50px;
     background: rgb(155, 155, 155);
-    padding:20px;
+    padding: 20px;
 }
-.sidebar a:hover{
+
+.sidebar a:hover {
     background-color: rgb(184, 184, 184);
 }
-.main{
+
+.main {
     display: flex;
     justify-content: center;
     margin-left: 15%;
@@ -51,32 +58,51 @@ body{
     text-align: center;
     flex-direction: column;
 }
-.main h1{
+
+.main>h1 {
     padding: 10px;
+    margin: 20px;
     color: rgb(229, 229, 229);
     background: rgb(119, 119, 119);
     font-size: 50px;
     text-align: center;
     border-radius: 20px;
 }
-.content-box{
+
+.content-box {
     flex-direction: row;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
     padding: 20px;
     border-style: groove;
-    /* border-radius: 5%; */
-    display:flex;
+    display: flex;
 }
-.content-box > div{
+
+.content-box>div {
     margin: 20px;
     font-size: medium;
 }
-.text-box{
+
+/* .text-box{
     padding: 10px;
     border-style: groove;
-    border-radius: 5%;
     display: flex;
     flex-direction: column;
     text-align:left;
+} */
+.button1 {
+    margin-top: 10px;
+    background-color: #327df6;
+    border: none;
+    border-radius: 10%;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.button1 > a {
+    color: aliceblue;
 }
