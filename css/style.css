@@ -28,7 +28,7 @@
     max-height: 150px;
 }
 
-.sidebar a {
+.sidebar>a {
     display: block;
     color: black;
     padding: 16px;
@@ -54,6 +54,15 @@
     div.main {
         margin-left: 0;
     }
+    div.content-flexbox p{
+        font-size: 20px;
+    }
+    div.main h1{
+        font-size: 40px;
+    }
+    div.text-box{
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 412px) {
@@ -62,13 +71,22 @@
         float: none;
         background-color: #327df6;
     }
-
+    
     .sidebar-img {
         display: none;
     }
-
+    
     div.main {
         margin-left: 0;
+    }
+    div.content-flexbox p{
+        font-size: 20px;
+    }
+    div.main h1{
+        font-size: 40px;
+    }
+    div.text-box{
+        text-align: center;
     }
 }
 
@@ -105,6 +123,12 @@
     justify-content: center;
     align-items: center;
 }
+.content-flexbox p{
+    font-size: 40px;
+    color: white;
+    background: rgb(119, 119, 119);
+    border-radius: 10%;
+}
 
 .content-flexbox div video {
     width: 100%;
@@ -120,11 +144,11 @@
 
 .content-flexbox div iframe {
     width: 100%;
-    max-width: 550px;
     height: auto;
 }
 .content-flexbox div{
     border: 1px solid red;
+    margin: 10px;
 }
 
 .text-box {
@@ -167,6 +191,10 @@
 
 
 
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
 .col-1 {
     width: 8.33%;
 }
@@ -217,9 +245,4 @@
 
 .row {
     display: table;
-}
-
-[class*="col-"] {
-    float: left;
-    padding: 15px;
 }
