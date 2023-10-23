@@ -121,14 +121,16 @@
     }
 }
 
-@media screen and (max-width: 412px) {
-    .row::after {
-        display: inline-block;
+@media screen and (max-width: 576px) {
+    .row {
+        display: grid;
         float: none;
+        padding: 15px;
     }
 
     [class*="col-"] {
-        width: 100%;
+        width: 50px;
+        margin:0 auto;
     }
 
     .sidebar a {
@@ -182,9 +184,6 @@
 }
 
 .content-box {
-    /* display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; */
     margin-top: 20px;
     padding: 20px;
     /* border-style: groove; */
@@ -219,7 +218,6 @@
 
 .content-box div {
     margin: 10px;
-
 }
 
 .text-box {
