@@ -7,13 +7,16 @@
 }
 
 .sidebar {
-    margin: 0;
-    padding: 0;
     width: 200px;
     background-color: #f1f1f1;
     position: fixed;
     height: 100%;
     overflow: auto;
+}
+.sidebar a:hover {
+    background-color: rgb(184, 184, 184);
+    transform: scale(1.5);
+    text-align: center;
 }
 
 .sidebar-img {
@@ -28,143 +31,11 @@
     max-height: 150px;
 }
 
-.sidebar>a {
+.sidebar > a {
     display: block;
     color: black;
     padding: 16px;
     text-decoration: none;
-}
-
-@media screen and (max-width: 768px) {
-    .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-        background-color: rgb(155, 155, 155);
-    }
-
-    .sidebar a {
-        float: left;
-    }
-
-    .sidebar-img {
-        display: none;
-    }
-
-    div.main {
-        margin-left: 0;
-    }
-
-    div.content-box p {
-        font-size: 20px;
-    }
-
-    div.main h1 {
-        font-size: 40px;
-    }
-
-    div.text-box {
-        text-align: center;
-    }
-
-    [class*="col-"] {
-        float: left;
-        padding: 15px;
-    }
-
-    .col-1 {
-        width: 8.33%;
-    }
-
-    .col-2 {
-        width: 16.66%;
-    }
-
-    .col-3 {
-        width: 25%;
-    }
-
-    .col-4 {
-        width: 33.33%;
-    }
-
-    .col-5 {
-        width: 41.66%;
-    }
-
-    .col-6 {
-        width: 50%;
-    }
-
-    .col-7 {
-        width: 58.33%;
-    }
-
-    .col-8 {
-        width: 66.66%;
-    }
-
-    .col-9 {
-        width: 75%;
-    }
-
-    .col-10 {
-        width: 83.33%;
-    }
-
-    .col-11 {
-        width: 91.66%;
-    }
-
-    .col-12 {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .row {
-        display: grid;
-        float: none;
-        padding: 15px;
-    }
-
-    [class*="col-"] {
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .sidebar a {
-        text-align: center;
-        float: none;
-        background-color: rgb(155, 155, 155);
-    }
-
-    .sidebar-img {
-        display: none;
-    }
-
-    div.main {
-        margin-left: 0;
-    }
-
-    div.content-box p {
-        font-size: 20px;
-    }
-
-    div.main h1 {
-        font-size: 40px;
-    }
-
-    div.text-box {
-        text-align: center;
-    }
-}
-
-
-.sidebar a:hover {
-    background-color: rgb(184, 184, 184);
-    transform: scale(1.5);
-    text-align: center;
 }
 
 .main {
@@ -187,9 +58,6 @@
 .content-box {
     margin-top: 20px;
     padding: 20px;
-    /* border-style: groove; */
-    justify-content: center;
-    align-items: center;
 }
 
 .content-box p {
@@ -200,23 +68,19 @@
     text-align: center;
 }
 
-.content-box div video {
+.content-box video {
     width: 100%;
-    max-width: 550px;
     height: auto;
 }
 
-.content-box div img {
+.content-box img {
     width: 100%;
     max-width: 550px;
     height: auto;
 }
 
 .text-box {
-    flex-wrap: nowrap;
     padding: 10px;
-    display: flex;
-    flex-direction: column;
     text-align: justify;
 }
 
@@ -239,7 +103,7 @@
     font-size: 16px;
 }
 
-.button1>a {
+.button1 > a {
     color: rgb(255, 255, 255);
 }
 
@@ -248,13 +112,16 @@
     color: white;
     padding: 20px;
     text-align: left;
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
 }
-
 
 .row::after {
     content: "";
-    clear: both;
     display: table;
+    clear: both;
 }
 
 [class*="col-"] {
@@ -308,4 +175,77 @@
 
 .col-12 {
     width: 100%;
+}
+
+/*for tablet*/
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        background-color: rgb(155, 155, 155);
+    }
+
+    .sidebar a {
+        float: left;
+    }
+
+    .sidebar-img {
+        display: none;
+    }
+
+    div.main {
+        margin-left: 0;
+    }
+
+    div.content-box p {
+        font-size: 20px;
+    }
+
+    div.main h1 {
+        font-size: 40px;
+    }
+
+    div.text-box {
+        text-align: center;
+    }
+}
+
+/*for Mobile*/
+@media screen and (max-width: 576px) {
+    .row {
+        display: grid;
+    }
+
+    [class*="col-"] {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .sidebar a {
+        text-align: center;
+        float: none;
+        background-color: rgb(155, 155, 155);
+    }
+
+    .sidebar-img {
+        display: none;
+    }
+
+    div.main {
+        margin-left: 0;
+        padding: 0;
+    }
+
+    div.content-box p {
+        font-size: 20px;
+    }
+
+    div.main h1 {
+        font-size: 40px;
+    }
+
+    div.text-box {
+        text-align: center;
+    }
 }
